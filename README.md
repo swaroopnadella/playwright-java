@@ -1,4 +1,4 @@
-# Playwright Java Basics
+# Playwright Basics - Java
 
 1. Cross Browser Testing (launchBrowsers) - Chromium, Firefox, WebKit browser binaries are available
  - Default browser mode is headless
