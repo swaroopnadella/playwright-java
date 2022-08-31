@@ -10,4 +10,6 @@
 2. Browser Context
  - Launches the browser sessions in the Incognito mode
  - Each Browser Context won't share cookies/cache with other browser contexts.
- - Useful when we need to test scenarios multiple user sessions based scenarios like role based (admin,general users), chat applications etc.
+ - Browser contexts can also be used to emulate multi-page scenarios involving mobile devices, permissions, locale and color scheme.
+ - Browser contexts are isolated environments on a single browser instance
+ - This is useful when you want to test for multi-user functionality, like chat
