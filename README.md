@@ -19,3 +19,18 @@
  - Locators are strict, so if more than one element matches with given selector and we try to perform operations then Exception is thrown
  - Using first(), last() methods we can disable strictness and perform actions of corresponding elements.
  - To access multiple elements with same selector, we can use the count() and nth index methods
+ 
+ 4. Selectors
+ 	i. Text selector locates elements that contain passed text.
+ 		- text=value IS SAME AS 'value' when we specify inside method page.locator("");
+ 			example: page.locator("text=value");
+ 					 page.locator("'value'");
+ 		- tagname:has-text('value')
+ 			example: page.locator("a:has-text('View Demo')");
+ 			
+ 	ii. CSS Selectors
+ 		- Selector strategy is same as like Selenium usage.
+ 		- tagname and classvalue is written as -> tagname.classvalue
+ 		- tagname and idvalue is written as -> tagname#idvalue
+ 		- we can use parent tag (div.demonstration-box) followed by space then child tag name(img) to form an CSS Selector
+ 			Example: "div.demonstration-box img"
