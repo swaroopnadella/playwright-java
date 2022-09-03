@@ -13,3 +13,9 @@
  - Browser contexts can also be used to emulate multi-page scenarios involving mobile devices, permissions, locale and color scheme.
  - Browser contexts are isolated environments on a single browser instance
  - This is useful when you want to test for multi-user functionality, like chat
+ 
+ 3. Locators
+ - Locators represent a way to find element(s) on the page.
+ - Locators are strict, so if more than one element matches with given selector and we try to perform operations then Exception is thrown
+ - Using first(), last() methods we can disable strictness and perform actions of corresponding elements.
+ - To access multiple elements with same selector, we can use the count() and nth index methods
