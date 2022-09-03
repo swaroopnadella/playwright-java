@@ -23,14 +23,13 @@
  4. Selectors
  	i. Text selector locates elements that contain passed text.
  		- text=value IS SAME AS 'value' when we specify inside method page.locator("");
- 			example: page.locator("text=value");
- 					 page.locator("'value'");
+ 		- example: page.locator("text=value"); page.locator("'value'");
  		- tagname:has-text('value')
- 			example: page.locator("a:has-text('View Demo')");
+ 		- example: page.locator("a:has-text('View Demo')");
  			
  	ii. CSS Selectors
  		- Selector strategy is same as like Selenium usage.
  		- tagname and classvalue is written as -> tagname.classvalue
  		- tagname and idvalue is written as -> tagname#idvalue
  		- we can use parent tag (div.demonstration-box) followed by space then child tag name(img) to form an CSS Selector
- 			Example: "div.demonstration-box img"
+ 		- Example: "div.demonstration-box img"
