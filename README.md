@@ -33,3 +33,7 @@
  		-- tagname and idvalue is written as -> tagname#idvalue
  		-- we can use parent tag (div.demonstration-box) followed by space then child tag name(img) to form an CSS Selector
  		-- Example: "div.demonstration-box img"
+
+ 5. Frames
+ 	- Using frameLocator and frame methods
+ 	- Different selectors - id, name, xpath, css selector
