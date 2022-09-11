@@ -39,5 +39,5 @@
  - frame method : using name
 
  6. Shadow DOM Elements (shadow-root)
- - shadow-root elements can be accessed the same way like other selectors
+ - shadow-root elements can be accessed the same way like other elements (non shadow-root)
  - No need to use the Javascriptexecutor code in Playwright, which is needed in Selenium.
