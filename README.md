@@ -35,5 +35,5 @@
  		-- Example: "div.demonstration-box img"
 
  5. Frames
- 	- Using frameLocator and frame methods
- 	- Different selectors - id, name, xpath, css selector
+ - frameLocator method : using selector
+ - frame method : using name
