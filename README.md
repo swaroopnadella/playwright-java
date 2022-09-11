@@ -37,3 +37,7 @@
  5. Frames
  - frameLocator method : using selector
  - frame method : using name
+
+ 6. Shadow DOM Elements
+ - shadow-root elements can be accessed the same way like other selectors
+ - No need to use the Javascriptexecutor code in Playwright, which is needed in Selenium.
