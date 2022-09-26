@@ -26,6 +26,8 @@
  		-- example: page.locator("text=value"); page.locator("'value'");
  		-- tagname:has-text('value')
  		-- example: page.locator("a:has-text('View Demo')");
+   -- Input elements of the type button and submit are matched by their value instead of text content. 
+      example, text=Log in matches < input type=button value="Log in" >.
  			
  - ii. CSS Selectors
  		-- Selector strategy is same as like Selenium usage.
