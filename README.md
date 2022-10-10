@@ -36,6 +36,15 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  		-- tagname and idvalue is written as -> tagname#idvalue
  		-- we can use parent tag (div.demonstration-box) followed by space then child tag name(img) to form an CSS Selector
  		-- Example: "div.demonstration-box img"
+   
+  - iii. React Selectors
+   -- React selectors allow selecting elements by its component name and property values.
+   -- React selectors can be more stable than the DOM element selectors, as the property values are specific to the React components and not the HTML DOM structure.
+   -- React Developer Tools browser extension helps to identify the react selectors on the React web application. 
+   -- We can test them using the Playwright CLI by launching the codegen for the website.
+   -- Use the Components and Profiler in the DevTools (F12) of the web browser to identify the React selectors.
+   -- Syntax for React selectors: "_react=componentName[attributeName='attributeValue']"
+   -- Example code for React selectors with Netflix website: page.locator("_react=UISelect[data-uia='language-picker']")
 
  5. Frames
  - frameLocator method : using selector
@@ -44,11 +53,3 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  6. Shadow DOM Elements (shadow-root)
  - shadow-root elements can be accessed the same way like other elements (non shadow-root)
  - No need to use the Javascriptexecutor code in Playwright, which is needed in Selenium.
-
-7. React Selectors
-- React selectors allow selecting elements by its component name and property values.
-- React selectors can be more stable than the DOM element selectors, as the property values are specific to the React components and not the HTML DOM structure.
-- React Developer Tools browser extension helps to identify the react selectors on the React web application. We can test them using the Playwright CLI by launching the codegen for the website.
-- Use the Components and Profiler in the DevTools (F12) of the web browser to identify the React selectors.
-- Syntax for React selectors: "_react=componentName[attributeName='attributeValue']"
-- Example code for React selectors with Netflix website: page.locator("_react=UISelect[data-uia='language-picker']")
