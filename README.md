@@ -22,29 +22,28 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  - To access multiple elements with same selector, we can use the count() and nth index methods
  
  4. Selectors
- - i. Text selector locates elements that contain passed text.
- 		-- text=value IS SAME AS 'value' when we specify inside method page.locator("");
- 		-- example: page.locator("text=value"); page.locator("'value'");
- 		-- tagname:has-text('value')
- 		-- example: page.locator("a:has-text('View Demo')");
-   -- Input elements of the type button and submit are matched by their value instead of text content. 
+ i. Text selector locates elements that contain passed text.
+ - text=value IS SAME AS 'value' when we specify inside method page.locator("");
+ - example: page.locator("text=value"); page.locator("'value'");
+ - tagname:has-text('value')
+ - example: page.locator("a:has-text('View Demo')");
+ - Input elements of the type button and submit are matched by their value instead of text content. 
       example, text=Log in matches < input type=button value="Log in" >.
  			
- - ii. CSS Selectors
- 		-- Selector strategy is same as like Selenium usage.
- 		-- tagname and classvalue is written as -> tagname.classvalue
- 		-- tagname and idvalue is written as -> tagname#idvalue
- 		-- we can use parent tag (div.demonstration-box) followed by space then child tag name(img) to form an CSS Selector
- 		-- Example: "div.demonstration-box img"
+ ii. CSS Selectors
+ - Selector strategy is same as like Selenium usage.
+ - tagname and classvalue is written as -> tagname.classvalue
+ - tagname and idvalue is written as -> tagname#idvalue
+ - we can use parent tag (div.demonstration-box) followed by space then child tag name(img) to form an CSS Selector
+ - Example: "div.demonstration-box img"
    
-  - iii. React Selectors
-   -- React selectors allow selecting elements by its component name and property values.
-   -- React selectors can be more stable than the DOM element selectors, as the property values are specific to the React components and not the HTML DOM structure.
-   -- React Developer Tools browser extension helps to identify the react selectors on the React web application. 
-   -- We can test them using the Playwright CLI by launching the codegen for the website.
-   -- Use the Components and Profiler in the DevTools (F12) of the web browser to identify the React selectors.
-   -- Syntax for React selectors: "_react=componentName[attributeName='attributeValue']"
-   -- Example code for React selectors with Netflix website: page.locator("_react=UISelect[data-uia='language-picker']")
+ iii. React Selectors
+ - React selectors allow selecting elements by its component name and property values.
+ - React selectors can be more stable than the DOM element selectors, as the property values are specific to the React components and not the HTML DOM structure.
+ - React Developer Tools browser extension helps to identify the react selectors on the React web application. We can test them using the Playwright CLI by launching the codegen for the website.
+ - Use the Components and Profiler in the DevTools (F12) of the web browser to identify the React selectors.
+ - Syntax for React selectors: "_react=componentName[attributeName='attributeValue']"
+ - Example code for React selectors with Netflix website: page.locator("_react=UISelect[data-uia='language-picker']")
 
  5. Frames
  - frameLocator method : using selector
