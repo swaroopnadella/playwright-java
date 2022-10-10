@@ -1,5 +1,5 @@
 # Playwright Basics - Java
-Refer Official Docs for detailed examples and code -> https://playwright.dev/java/docs/intro
+Refer Official Docs for detailed examples and code samples -> https://playwright.dev/java/docs/intro
 
 1. Cross Browser Testing (launchBrowsers) - Chromium, Firefox, WebKit browser binaries are available
  - Default browser mode is headless
