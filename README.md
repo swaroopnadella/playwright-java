@@ -22,6 +22,7 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  - To access multiple elements with same selector, we can use the count() and nth index methods
  
  4. Selectors
+ 
  i. Text selector locates elements that contain passed text.
  - text=value IS SAME AS 'value' when we specify inside method page.locator("");
  - example: page.locator("text=value"); page.locator("'value'");
