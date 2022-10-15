@@ -15,13 +15,13 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  - Browser contexts are isolated environments on a single browser instance
  - This is useful when you want to test for multi-user functionality, like chat
  
- 3. Locators
+3. Locators
  - Locators represent a way to find DOM element(s) on the page.
  - Locators are strict, so if more than one element matches with given selector and we try to perform operations then Exception is thrown
  - Using first(), last() methods we can disable strictness and perform actions of corresponding elements.
  - To access multiple elements with same selector, we can use the count() and nth index methods
  
- 4. Selectors
+4. Selectors
  
  i. Text selector locates elements that contain passed text.
  - text=value IS SAME AS 'value' when we specify inside method page.locator("");
@@ -46,10 +46,15 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  - Syntax for React selectors: "_react=componentName[attributeName='attributeValue']"
  - Example code for React selectors with Netflix website: page.locator("_react=UISelect[data-uia='language-picker']")
 
- 5. Frames
+5. Frames
  - frameLocator method : using selector
  - frame method : using name
 
- 6. Shadow DOM Elements (shadow-root)
+6. Shadow DOM Elements (shadow-root)
  - shadow-root elements can be accessed the same way like other elements (non shadow-root)
  - No need to use the Javascriptexecutor code in Playwright, which is needed in Selenium.
+
+7. Web Tables
+ - Using the Scope selector we can work on the Web Table elements.
+ - Syntax - locator(":scope") method
+ - We can pass a unique value to select an row and perform operations on the elements in that row.
