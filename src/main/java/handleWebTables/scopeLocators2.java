@@ -24,7 +24,8 @@ public class scopeLocators2 {
 		System.out.println("*************************************");
 		
 		row.locator(":scope").allInnerTexts().forEach(e->System.out.println(e));
-
+		
+		pw.close();
 	}
 
 }
