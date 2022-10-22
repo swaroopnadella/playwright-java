@@ -4,7 +4,7 @@ import java.nio.file.Paths;
 
 import com.microsoft.playwright.*;
 
-public class useSavedStorageSpace {
+public class useSavedStorageState {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
