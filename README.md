@@ -58,3 +58,8 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  - Using the Scope selector we can work on the Web Table elements.
  - Syntax - locator(":scope") method
  - We can pass a unique value to select an row and perform operations on the elements in that row.
+
+8. Authentication - Reuse signed in state
+ - By Reusing the signed in session state, we can skip the log in step for all of the tests.
+ - Step1 is save the logged in session state as json file using the Browser context
+ - Step2 is use the state json in the tests Browser context and we can auto login.
