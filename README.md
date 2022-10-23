@@ -63,3 +63,15 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  - By Reusing the signed in session state, we can skip the log in step for all of the tests.
  - Step1 is save the logged in session state as json file using the Browser context
  - Step2 is use the state json in the tests Browser context and we can auto login.
+
+9. Handling Javascript Dialogs using Handler
+ - Javascript Dialogs are three types
+   JS Alert : has OK button
+   JS Confirm : has Cancel and OK buttons
+   JS Prompt : has Textbox, Cancel and OK buttons
+ - When an JS Dialog appears on the Web page, Playwright automatically handles it (Clicking on Cancel or OK). No additional code required.
+ - By Using the onDialog Handler on the JS Dialog we can do the following actions.
+	  Retrieve the message 
+	  Click Ok (accept)
+	  Click Ok with prompt text (accept with specified text)
+	  Click Cancel (dismiss)
