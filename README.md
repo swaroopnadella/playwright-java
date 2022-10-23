@@ -1,5 +1,6 @@
 # Playwright Basics - Java
-[This repository has my Practice code for various topics listed below]
+This repository has my Practice code for various topics listed below
+
 Refer Official Docs for detailed examples and code samples -> https://playwright.dev/java/docs/intro
 
 1. Cross Browser Testing (launchBrowsers) - Chromium, Firefox, WebKit browser binaries are available
