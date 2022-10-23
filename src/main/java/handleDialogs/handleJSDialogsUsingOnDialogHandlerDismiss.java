@@ -5,7 +5,7 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
-public class handleJSDialogsUsingOnDialogHandler {
+public class handleJSDialogsUsingOnDialogHandlerDismiss {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,8 +16,8 @@ public class handleJSDialogsUsingOnDialogHandler {
 		page.onDialog(dialog -> {
 			String text = dialog.message();
 			System.out.println(text);
-			dialog.accept("Message from Javascript alerts - SN");
-			//dialog.dismiss();
+			//dialog.accept("Message from Javascript alerts - SN");
+			dialog.dismiss();
 		});
 		page.navigate("https://the-internet.herokuapp.com/javascript_alerts");
 		
@@ -42,9 +42,9 @@ public class handleJSDialogsUsingOnDialogHandler {
 		//I am a JS Alert
 		//You successfully clicked an alert
 		//I am a JS Confirm
-		//You clicked: Ok
+		//You clicked: Cancel
 		//I am a JS prompt
-		//You entered: Message from Javascript alerts - SN
+		//You entered: null
 
 	}
 
