@@ -23,7 +23,8 @@ public class handleJSAlert {
 		System.out.println(result);
 		//text printed on Console: You successfully clicked an alert
 		
-		
+		page.close();
+		pw.close();
 	}
 
 }

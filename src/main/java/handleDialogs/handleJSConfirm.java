@@ -23,7 +23,8 @@ public class handleJSConfirm {
 		System.out.println(result);
 		//text printed on Console: You clicked: Cancel
 		
-		
+		page.close();
+		pw.close();
 	}
 
 }

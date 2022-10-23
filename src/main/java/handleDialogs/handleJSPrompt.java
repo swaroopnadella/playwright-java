@@ -23,7 +23,8 @@ public class handleJSPrompt {
 		System.out.println(result);
 		//text printed on Console: You entered: null
 		
-		
+		page.close();
+		pw.close();
 	}
 
 }
