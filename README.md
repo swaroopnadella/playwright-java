@@ -66,14 +66,15 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
  - Step1 is save the logged in session state as json file using the Browser context
  - Step2 is use the state json in the tests Browser context and we can auto login.
 
-9. Handling Javascript Dialogs using Handler
+9. Handling Javascript Dialogs using Handler Listener
  - Javascript Dialogs are three types
    - JS Alert : has OK button
    - JS Confirm : has Cancel and OK buttons
    - JS Prompt : has Textbox, Cancel and OK buttons
- - When an JS Dialog appears on the Web page, Playwright automatically handles it (Clicking on Cancel or OK). No additional code required.
+ - When an JS Dialog appears on the Web page, Playwright automatically handles it (Clicking on Cancel or OK), when there is no listener for Page.onDialog(handler).
  - By Using the onDialog Handler on the JS Dialog we can do the following actions.
 	  - Retrieve the message 
 	  - Click Ok (accept)
 	  - Click Ok with prompt text (accept with specified text)
 	  - Click Cancel (dismiss)
+ - Page.onDialog(handler) listener if used must handle the dialog with accept or dismiss, otherwise the page will get hanged and block further page execution.
