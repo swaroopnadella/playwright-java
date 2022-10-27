@@ -78,3 +78,10 @@ Refer Official Docs for detailed examples and code samples -> https://playwright
 	  - Click Ok with prompt text (accept with specified text)
 	  - Click Cancel (dismiss)
  - Page.onDialog(handler) listener if used must handle the dialog with accept or dismiss, otherwise the page will get hanged and block further page execution.
+ 
+ 10. Record Videos of script execution
+  - Set the Video Directory using the Browser Context options
+  - Videos are saved upon browser context closure at the end of a test.
+  - We can set the Video size to the desired viewport size.
+  - Videos are generated with unique names in .webm format. 
+  - For the multi-page scenarios, we can access the video file associated with the page via the Page.video()
