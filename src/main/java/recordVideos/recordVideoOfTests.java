@@ -31,6 +31,10 @@ public class recordVideoOfTests {
 		
 		page.locator("#content").allInnerTexts().forEach(e->System.out.println(e));
 		
+		// Saved video files will appear in the specified folder. They all have generated unique names.
+		// For the multi-page scenarios, you can access the video file associated with the page via the Page.video()
+		System.out.println(page.video().path().toString());
+		
 		page.close();
 		brContext.close();
 		browser.close();
