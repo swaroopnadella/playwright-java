@@ -25,8 +25,7 @@ public class apiGetCall2 {
 		// Contains the status code of the response (e.g., 200 for a success).
 		System.out.println(response.status()); //404 - Not Found
 
-		// Contains the status text of the response (e.g. usually an "OK" for a
-		// success).
+		// Contains the status text of the response (e.g. usually an "OK" for a success).
 		System.out.println(response.statusText());
 
 		// Returns the text representation of response body.
@@ -34,7 +33,9 @@ public class apiGetCall2 {
 
 		// An object with all the response HTTP headers associated with this response.
 		System.out.println(response.headers());
-
+		
+		apiRequestContext.dispose();
+		pw.close();
 	}
 
 }
